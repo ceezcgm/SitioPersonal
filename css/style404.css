@@ -42,7 +42,11 @@
     grid-gap: 1.5rem; 
   }
 
-
+  svg{
+    height:100%;
+    width:100%;
+    align-content: center;
+  }
 
 
 .error{
@@ -51,26 +55,89 @@
     font-size: 10em;
     color:  white;
 font-family: 'bebas kai';
-grid-column-start: 1;
-    grid-column-end: 3;
+grid-column-start: 2;
+    grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 6;
 }
 .page{
+  text-align: center;
     z-index: 10;
     font-size: 5em;
     color:  white;
 font-family: 'bebas kai';
-grid-column-start: 1;
-    grid-column-end: 6;
+grid-column-start: 2;
+    grid-column-end: 8;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 .panic{
     z-index: 0;
-    
-grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 8;
+}
+
+@media all and (max-width:600px){
+ .container{
+   width:90%;
+ }
+
+ .gallery {
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 5vw);
+  grid-gap: 1.5rem; 
+}
+
+ .error{
+    z-index: 10;
+    padding-left:40%;
+    font-size: 5em;
+    color:  white;
+font-family: 'bebas kai';
+grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+.page{
+  text-align: center;
+    z-index: 10;
+    font-size: 2em;
+    color:  white;
+font-family: 'bebas kai';
+grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.panic{
+  
+    z-index: 0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+svg{
+  margin-left:-60%;
+  width:400%;
+  height:400%;
+}
+
+a{
+  z-index: 20;
+  margin-left:30%;
+  padding:5%;
+  background-color:#B35658;
+  text-align: center;
+  color:white;
+  font-size:2em;
+  font-family: 'Bebas Kai';
+}
+
 }
