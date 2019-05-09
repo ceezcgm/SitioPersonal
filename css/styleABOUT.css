@@ -1,3 +1,19 @@
+@font-face{
+  font-family: 'Bebas Kai';
+  src: url('../fonts/bebaskai-regular-webfont.woff') format('woff'),
+       url('../fonts/bebaskai-regular-webfont.svg') format('svg'),
+       url('../fonts/bebaskai-regular-webfont.ttf') format('truetype'),
+       url('../fonts/bebaskai-regular-webfont.woff2') format('woff2');
+
+}
+@font-face{
+  font-family: 'bromello';
+  src: url('../fonts/bromello-webfont.woff') format('woff'),
+       url('../fonts/bromello-webfont.svg') format('svg'),
+       url('../fonts/bromello-webfont.ttf') format('truetype'),
+       url('../fonts/bromello-webfont.woff2') format('woff2');
+
+}
 
 .footer h6{
   position: fixed;

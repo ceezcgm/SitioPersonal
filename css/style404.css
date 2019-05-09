@@ -1,0 +1,76 @@
+@font-face{
+    font-family: 'Bebas Kai';
+    src: url('../fonts/bebaskai-regular-webfont.woff') format('woff'),
+         url('../fonts/bebaskai-regular-webfont.svg') format('svg'),
+         url('../fonts/bebaskai-regular-webfont.ttf') format('truetype'),
+         url('../fonts/bebaskai-regular-webfont.woff2') format('woff2');
+  
+  }
+  @font-face{
+    font-family: 'bromello';
+    src: url('../fonts/bromello-webfont.woff') format('woff'),
+         url('../fonts/bromello-webfont.svg') format('svg'),
+         url('../fonts/bromello-webfont.ttf') format('truetype'),
+         url('../fonts/bromello-webfont.woff2') format('woff2');
+  
+  }
+  
+  html{
+    background-color: #ee7375;
+}
+
+
+
+
+.svg
+{
+    z-index: 0;
+    width: 90%;
+    margin: 2rem auto; 
+  }
+.container {
+    z-index: 10;
+    width: 90%;
+    margin: 2rem auto; 
+  }
+  
+  .gallery {
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 5vw);
+    grid-gap: 1.5rem; 
+  }
+
+
+
+
+.error{
+    z-index: 10;
+    padding-left:40%;
+    font-size: 10em;
+    color:  white;
+font-family: 'bebas kai';
+grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+.page{
+    z-index: 10;
+    font-size: 5em;
+    color:  white;
+font-family: 'bebas kai';
+grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.panic{
+    z-index: 0;
+    
+grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
