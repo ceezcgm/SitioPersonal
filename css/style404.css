@@ -41,7 +41,6 @@
     grid-template-rows: repeat(10, 5vw);
     grid-gap: 1.5rem; 
   }
-
   svg{
     height:100%;
     width:100%;
