@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ceez Cárdenas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="author" content="Cecilia Càrdenas">
+    <link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/header-fixed.css">
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+    
+</head>
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="#">Ceez<span> Cárdenas</span></a></h1>
+
+		<nav>
+			<a href="index.html" class="selected">Home</a>
+			<a href="acting.html">Acting</a>
+			<a href="dance.html">Dance </a>
+			<a href="about.html" >About</a>
+		</nav>
+
+	</div>
+
+</header>
+
+
+<div class="header-fixed-placeholder"></div>
+
+
+
+
+<section id="seccion2">	
+	<img src="images/embeded2.png" class="banner">
+	
+	<h4>Dreamroles:</h4>	
+</section>
+
+
+
+
+<main>
+
+	<div id="carousel">
+
+		 <div class="hideLeft">
+			<img src="images/lesmiserables.jpg">
+		</div>
+
+		<div class="prevLeftSecond">
+			<img src="images/cats.jpg">
+		</div>
+
+		<div class="prev">
+			<img src="images/hnmpl.jpg">
+		</div>
+
+		<div class="selected">
+			<img src="images/HEATHERS.jpg">
+		</div>
+
+		<div class="next">
+			<img src="images/rent.jpg">
+		</div>
+
+		<div class="nextRightSecond">
+			<img src="images/lionking.jpg">
+		</div>
+
+		<div class="hideRight">
+			<img src="images/wicked.jpg">
+		</div>
+
+	</div>
+
+	<div class="buttons">
+		<button id="prev">◄</button>
+		<button id="next">►</button>
+	</div>
+
+	
+</main>
+
+
+
+<div class="grid-container">
+  <div class="gallery">
+		<figure class="pleca"></figure>
+		<figure class="pleca2"></figure>
+		<figure class="pleca3"></figure>
+		<figure class="pleca4"></figure>
+		<figure class="foto"><img src="images/homeceez.png" ></figure>
+		<figure class="texto">   Ceez cgm.</figure>
+		<figure class="par1">  21 años, actriz y bailarina.</figure>
+		<figure class="par2">  o un intento de serlo</figure>
+		<figure class="actuacion">  actuacion <p>Actuo desde los 9 años, comencé en cursos de verano y con el tiempo me di cuenta de que era una de mis más grandes pasiones.</p></figure>
+		<figure class="baile"> baile <p>Bailo desde que tengo memoria y a pesar de que empecé con ballet, siempre fue el jazz y  el hip hop lo que me llamó la atención.</p></figure>
+		<figure class="canto">  canto <p>Realmente comencé a cantar hasta muchos años después de que empecé con el teatro, me falta trabajarlo mucho.</p></figure>
+		<figure class="diseño">  diseño <p>Como carrera estudio diseño, ya que siempre tuve el gusto por dibujar y resolver problemas de manera creativa.</p></figure>
+		<figure class="shoes" ><img src="images/shoes.png" width="110%"  onclick="window.open('dance.html');"></figure>
+		<figure class="mask"> <img src="images/mask.png" width="100%" onclick="window.open('acting.html');"></figure>
+		<figure class="mic">  <img src="images/mic.png"width="80%" onclick="window.open('about.html');"></figure>
+	
+	</div>
+</div>
+
+
+
+
+
+
+<div class="footer">
+    <p>ceezcgm@gmail.com </p>
+
+  </div>
+
+
+
+
+
+
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+	<script src="js/jsindex.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+	
+
+		if(win.width() > 400){
+
+			
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+
+
+
+</body>
+</html>
+
+
+<!--f37e7c dirty purple-->
+
+
+

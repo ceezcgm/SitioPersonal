@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ceez Cárdenas</title>
+    <link rel="stylesheet" href="css/styleACTING.css">
+    <meta name="author" content="Cecilia Càrdenas">
+    <link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/header-fixedACTING.css">
+    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styleACTING.css">
+    <script src="java-acting.js"></script>
+
+    
+</head>
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="#">Ceez<span> Cárdenas</span></a></h1>
+
+        <nav>
+			<a href="index.html" >Home</a>
+			<a href="acting.html" class="selected">Acting</a>
+			<a href="dance.html">Dance </a>
+			<a href="about.html" >About</a>
+		</nav>
+
+	</div>
+
+</header>
+
+
+<div class="header-fixed-placeholder"></div>
+
+
+
+
+<section id="seccion2">	
+  <h3 id="frase">ACTING</h3>
+  
+
+
+</section>
+
+<div id="overlay">
+    
+    <video class="visible-desktop" id="hero-vid" poster="images/fantine.jpg" autoplay loop muted>
+        <source src="media/fantine.mp4" type="video/mp4"></source>
+        <source type="video/mp4" src="media/fantine.mp4"></source>
+    </video>
+    <div id="state" class="visible-desktop"><span class="fa fa-pause"></span></div>
+    
+</div>
+
+<div class="container">
+    <div class="gallery">
+        <figure class="lionking1">
+            <img src="images/lion1.jpg" alt="Gallery image 1" class="gallery__img">
+        </figure>
+        <figure class="cats1">
+            <img src="images/cats3.jpg" alt="Gallery image 2" class="gallery__img">
+        </figure>
+        <figure class="lesmiserables1">
+            <img src="images/mis1.jpg" alt="Gallery image 3" class="gallery__img">
+        </figure>
+        <figure class="lionking2">
+            <img src="images/lion2.jpg" alt="Gallery image 4" class="gallery__img">
+        </figure>
+        <figure class="lesmiserables2">
+            <img src="images/mis2.jpg" alt="Gallery image 5" class="gallery__img">
+        </figure>
+        <figure class="cats2">
+            <img src="images/cats1.jpg" alt="Gallery image 6" class="gallery__img">
+        </figure>
+        <figure class="lesmiserables3">
+            <img src="images/cats1.jpg" alt="Gallery image 6" class="gallery__img">
+        </figure>
+    </div>
+</div>
+
+<div class="dropdown">
+        <h4>Watch the full video</h4>
+        <div class="dropdown-content">
+                <video width="130%" height="130%" controls>
+                        <source src="media/fantine.mp4" type="video/mp4">
+                        <source src="media/fantine.ogg" type="video/ogg">
+                      Your browser does not support the video tag.
+                      </video>
+        <div class="desc">as Fantine in Les Miserables  </div>
+        </div>
+      </div>
+
+
+
+<div class="footer">
+    <p>ceezcgm@gmail.com </p>
+
+  </div>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+	
+
+		if(win.width() > 400){
+
+			
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+<script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+    
+
+
+
+
+        
+</body>
+</html>
+
+
+
+
+
+
+
+        

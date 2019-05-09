@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ceez Cárdenas</title>
+    <link rel="stylesheet" href="css/styleABOUT.css">
+    <link rel="stylesheet" href="assets/demo.css">
+		<link rel="stylesheet" href="assets/header-fixedABOUT.css">
+	<meta name="author" content="Cecilia Cárdenas">
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    
+</head>
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="#">Ceez<span> Cárdenas</span></a></h1>
+
+		<nav>
+			<a href="index.html" >Home</a>
+			<a href="acting.html">Acting</a>
+			<a href="dance.html">Dance </a>
+			<a href="about.html" class="selected" >About</a>
+		</nav>
+
+	</div>
+
+</header>
+
+
+<div class="header-fixed-placeholder"></div>
+
+
+
+
+<section id="seccion2">	
+  <h1 id="frase">Ceez CÁRDENAS</h1>
+</section>
+
+
+<div class="footer">
+		<h6>ceezcgm@gmail.com </h6>
+		
+
+  </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<div class="container">
+            <div class="gallery">
+                
+                <figure class="lesmiserables3">
+                    <img src="images/ceez.jpg" alt="Gallery image 6" class="gallery__img"></figure>
+								<figure class="insta_pp"><img src="images/instapp.png" width="130%"></figure>
+								<figure class="instagram_text"><h3>instagram @sketch_ceez</h3></figure>	
+								<figure class="insta_photos">
+									<img src="images/insta1.jpg"  height="100%" width="24%">
+									<img src="images/emily.png" height="100%" width="24%">
+									<img src="images/ice.png"height="100%"  width="24%">
+									<img src="images/starlord.png" height="100%" width="24%">
+								</figure>	
+								<figure class="pleca_insta"></figure>
+
+								
+                <figure class="fb_pp"><img src="images/fbpp.png" width="130%"></figure>
+								<figure class="fb_text"><h3>facebook Ceez Cárdenas</h3></figure>	
+								
+								<figure class="pleca_fb"></figure>
+					
+								<figure class="creativa_pp"><img src="images/c1pp.png" width="130%"></figure>
+								<figure class="c1_text"><h3>Creativa Uno</h3></figure>	
+								<figure class="c1_photos">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3634295554325!2d-99.19520838532856!3d19.439891545485445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d202064c43b2cf%3A0x6219f2f87e9fe35!2sLago+Tanganica+23%2C+Granada%2C+11520+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1556818456135!5m2!1ses!2smx"  frameborder="0" style="border:0" allowfullscreen></iframe>
+									
+								</figure>	
+								<figure class="pleca_c1"></figure>
+
+								<figure class="twitter_pp"><img src="images/tpp.png" width="130%"></figure>
+								<figure class="t_text"><h3>Twitter @DimeCeez</h3></figure>	
+							
+								<figure class="pleca_t"></figure>
+
+							</figure>
+							<figure class="about">
+								<p>Soy estudiante de 6.semestre de Diseño Multimedia. Mi pasión es tanto el teatro como la animación y para mi siempre han ido de la mano. Comencé con cursos de teatro musical y fue poco a poco que me fui dando cuenta de la similitud con la animación. Me gusta contar historias, hacer que las personas se abran a sentir en este mundo tan frío y es esa mi meta. Humanizar un poco, tocar corazones y hacer que las personas se den cuenta de las maravillas que tiene la vida.
+								</p>
+								 
+							</figure>
+
+
+
+                </figure>
+                <figure class="pleca">
+                   
+                </figure>
+                
+				
+            </div>
+		</div>
+	
+		
+		<script>
+
+			$(document).ready(function(){
+		
+				var showHeaderAt = 150;
+		
+				var win = $(window),
+						body = $('body');
+		
+			
+		
+				if(win.width() > 400){
+		
+					
+		
+					win.on('scroll', function(e){
+		
+						if(win.scrollTop() > showHeaderAt) {
+							body.addClass('fixed');
+						}
+						else {
+							body.removeClass('fixed');
+						}
+					});
+		
+				}
+		
+			});
+		
+		</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+        

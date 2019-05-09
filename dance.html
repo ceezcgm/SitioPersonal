@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ceez Cárdenas</title>
+    <link rel="stylesheet" href="css/styleDANCE.css">
+    <meta name="author" content="Cecilia Càrdenas">
+    <link rel="stylesheet" href="assets/demoACTING.css">
+	<link rel="stylesheet" href="assets/header-fixedDANCE.css">
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+	
+	
+	
+</head>
+
+
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="#">Ceez<span> Cárdenas</span></a></h1>
+
+		<nav>
+			<a href="index.html" >Home</a>
+			<a href="acting.html">Acting</a>
+			<a href="dance.html" class="selected">Dance </a>
+			<a href="about.html" >About</a>
+		</nav>
+
+	
+
+</header>
+
+
+<div class="header-fixed-placeholder"></div>
+
+<section id="seccion2">	
+	<h3 id="frase">DANCE</h5>
+  </section>
+
+	<section id="seccion3">
+		
+		<div id="video">
+    <figure>
+      <a class="fancybox fancybox.iframe" href="media/comeToMe.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img class="videoThumb" src="images/come.png"></a>
+    </figure>
+   
+	</div>
+
+	<div id="video">
+    <figure>
+      <a class="fancybox fancybox.iframe" href="media/juice.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img class="videoThumb" src="images/juice.png"></a>
+    </figure>
+    
+	</div>
+	
+	<div id="video">
+    <figure>
+      <a class="fancybox fancybox.iframe" href="media/holding.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img class="videoThumb" src="images/holding.png"></a>
+    </figure>
+   
+  </div>
+
+	<div id="video">
+    <figure>
+      <a class="fancybox fancybox.iframe" href="media/only.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img class="videoThumb" src="images/only.png"></a>
+    </figure>
+    
+  </div>
+
+	<div id="video">
+    <figure>
+      <a class="fancybox fancybox.iframe" href="media/partition.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img class="videoThumb" src="images/partition.png"></a>
+    </figure>
+    
+  </div>
+
+	<div id="video">
+    <figure>
+      <a class="fancybox fancybox.iframe" href="media/shapeofyou.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img class="videoThumb" src="images/shape.png"></a>
+    </figure>
+    
+  </div>
+
+	<div id="video">
+    <figure>
+      <a class="fancybox fancybox.iframe" href="media/swish.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img class="videoThumb" src="images/swish.png"></a>
+    </figure>
+    
+	</div>
+	<div id="video">
+    <figure>
+      <a class="fancybox fancybox.iframe" href="media/turnme.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img class="videoThumb" src="images/turn.png"></a>
+    </figure>
+    
+	</div>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+		
+
+		if(win.width() > 400){
+
+			
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+
+<script
+	src="http://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+
+<script src="js/jquery.fancybox.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('.fancybox').fancybox({
+			padding   : 0,
+			maxWidth  : '100%',
+			maxHeight : '100%',
+			width   : 560,
+			height    : 315,
+			autoSize  : true,
+			closeClick  : true,
+			openEffect  : 'elastic',
+			closeEffect : 'elastic'
+		});
+	});
+</script>
+
+
+
+</body>
+</html>

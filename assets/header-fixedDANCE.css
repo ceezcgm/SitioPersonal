@@ -1,0 +1,422 @@
+@font-face{
+  font-family: 'Bebas Kai';
+  src: url('../fonts/bebaskai-regular-webfont.woff') format('woff'),
+       url('../fonts/bebaskai-regular-webfont.svg') format('svg'),
+       url('../fonts/bebaskai-regular-webfont.ttf') format('truetype'),
+       url('../fonts/bebaskai-regular-webfont.woff2') format('woff2');
+
+}
+@font-face{
+  font-family: 'bromello';
+  src: url('../fonts/bromello-webfont.woff') format('woff'),
+       url('../fonts/bromello-webfont.svg') format('svg'),
+       url('../fonts/bromello-webfont.ttf') format('truetype'),
+       url('../fonts/bromello-webfont.woff2') format('woff2');
+
+}
+
+
+
+.header-fixed {
+	background-color:#292c2f;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
+}
+
+.header-fixed .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+
+
+.header-fixed .header-limiter h1 {
+	float: left;
+	font: normal 28px Bebas kai, Bebas Kai, Bebas Kai, sans-serif;
+	line-height: 40px;
+    margin: 0;
+    font-size: 2em;
+}
+
+.header-fixed .header-limiter h1 span {
+    color: #ee7375;
+    font-family: Cookie;
+    font-size: 1.3em;
+}
+
+
+
+.header-fixed .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+	font:1.3em Bebas Kai, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	color: #ee7375;
+	pointer-events: none;
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a:hover {
+    color:#b21259;
+}
+
+body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+
+
+/*celphone-portrait*/
+@media all and (max-width: 800px)  {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 1.2em;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 1.2em;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+	.container {
+        width: 90%;
+        margin: 2rem auto; 
+      }
+      
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(14, 5vw);
+        grid-gap: 1.5rem; 
+      }
+      
+      .gallery__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block; 
+      }
+      
+      .cometome {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+      
+       
+      
+      .dropbtn{
+        cursor: pointer;
+          border: none;
+          outline: none;
+          color: white;
+      }
+      
+      .swish {
+        grid-column-start: 5;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 5;}
+      
+        
+       
+      
+      .video {
+          
+        display: none;
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 8;
+      }
+
+      .dropdownb4 .dropdown-content .mydropdown{
+        width:30%;
+        height:30%;
+        align-content: center;
+        align-items: center;
+       margin-left:10%;
+        
+         grid-column-start: 5;
+         grid-column-end: 10;
+         grid-row-start: 1;
+         grid-row-end: 8;
+        
+       }
+      
+      
+      .adjuice {
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 5;
+        grid-row-end: 12;
+      }
+      
+      
+      
+      .shape {
+        grid-column-start: 1;
+        grid-column-end: 10;
+        grid-row-start: 12;
+        grid-row-end: 15;
+      
+       
+      } }
+
+
+/*tablet-portrait*/
+@media (max-width: 1024px) and (min-width: 5001px){
+	.texto{
+		font-size: 5em;
+		grid-column-start: 4;
+		grid-column-end: 10;
+		grid-row-start: 1;
+		grid-row-end: 5;
+
+	}
+
+	section#seccion2{
+    background-image: url(../images/wavespink.png);
+   background-size: cover;
+   background-position: center;
+  width:100%;
+height:30%;
+margin-bottom:350px;
+z-index: -10;
+
+
+}
+
+h4{color:black;
+	font-family: Bebas Kai;
+	font-size: 4em;
+	margin: 0;
+	padding:0;
+	margin-top:10%;
+	margin-bottom: 50px;
+	align-content: center;
+	text-align: center;
+	}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 8vw);
+   
+  
+}
+
+.grid-container.gallery__img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+  padding:0;
+  margin:0;
+  border:0;
+}
+.pleca {
+  background-color:#bbc3cb;
+  background-size:cover;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(110,120,134,1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(110,120,134,1);
+  box-shadow: 5px 5px 5px 0px rgba(110,120,134,1);
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 15;
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+.pleca2 {
+  background-color:#ee7375;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(110,120,134,1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(110,120,134,1);
+  box-shadow: 5px 5px 5px 0px rgba(110,120,134,1);
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-size:cover;
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+.pleca3 {
+  background-color:#bbc3cb;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(110,120,134,1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(110,120,134,1);
+  box-shadow: 5px 5px 5px 0px rgba(110,120,134,1);
+  grid-column-start: 7;
+  grid-column-end: 13;
+  grid-row-start: 5;
+  grid-row-end: 15;
+  background-size:cover;
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+
+
+.par1 {
+  text-align: center;
+  font-family:Bebas Kai;
+  font-size: 2em;
+  color:white;
+  margin-top:0%;
+  grid-column-start:2;
+  grid-column-end: 12;
+  grid-row-start: 4;
+  grid-row-end: 5; 
+}
+.par2 {
+  text-align: center;
+  font-family:Bebas Kai;
+  font-size: 1.5em;
+  color:#6e7886;
+  margin-top:-5%;
+  grid-column-start:2;
+  grid-column-end: 12;
+  grid-row-start: 5;
+  grid-row-end: 6; 
+}
+
+.baile {
+  text-align: center;
+  font-family:Bebas Kai;
+  font-size: 1.5em;
+  color:#6e7886;
+  margin-top:0%;
+  grid-column-start:1;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 7; 
+}
+
+.canto {
+  text-align: center;
+  font-family:Bebas Kai;
+  font-size: 1.5em;
+  color:#6e7886;
+  margin-top:5%;
+  grid-column-start:7;
+  grid-column-end: 13;
+  grid-row-start: 5;
+  grid-row-end: 7; 
+}
+
+.actuacion {
+  text-align: center;
+  font-family:Bebas Kai;
+  font-size: 1.5em;
+  color:#6e7886;
+  margin-top:10%;
+  grid-column-start:1;
+  grid-column-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 14; 
+}
+
+.diseño {
+  text-align: center;
+  font-family:Bebas Kai;
+  font-size: 1.5em;
+  color:#6e7886;
+  margin-top:10%;
+  grid-column-start:7;
+  grid-column-end: 13;
+  grid-row-start: 8;
+  grid-row-end: 14; 
+}
+
+p{
+	margin:auto;
+  font-size: 1em;
+  color:white;
+}
+}
+
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 1500px;
+}

@@ -1,0 +1,142 @@
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #292c2f;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+  }
+
+  
+  section#seccion2{
+   
+    background-image: url(../images/dance4.jpg);
+  height: 20%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+z-index: -10;
+
+}
+      
+h3{font-size: 13em;
+    text-align: center;
+    color:#ee7375;
+    padding:10px;
+    padding-top: 10px;
+    font-family:Bebas Kai;
+}
+
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-image: url("../images/marble.jpg"); 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+/* First make sure the video thumbnail images are responsive. */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 
+This is the starting grid for each video with thumbnails 4 across for the largest screen size.
+It's important to use percentages or there may be gaps on the right side of the page. 
+*/
+
+#video {
+  
+  background:#fff;
+  padding-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  width: 23%; 
+  margin: 1%;
+  float: left;
+}
+
+
+
+.video figure {
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;}
+
+  .video figure a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 0;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  #video {
+    width: 31.333%; 
+  }
+}
+
+@media (max-width: 600px) {
+  #video {
+    width: 80%; 
+    
+    margin-left:10%;
+    
+    
+  }
+  
+.seccion#seccion3{
+  
+  padding-left:20%;
+  margin-left:20%;
+  left:10%;
+}
+}
+
+
+
+
+
+.video img {
+  width: 100%;
+  opacity: 1;
+}
+
+.video img:hover, .video img:active, .video img:focus {
+  opacity: 0.75;
+}
+
+.videoTitle{
+  
+  color:#ee7375;
+  font-family: 'Bebas Kai';
+  font-size:2rem;
+  text-align: center;
+  padding-top: 4%;
+  
+}

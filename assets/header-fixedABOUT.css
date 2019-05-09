@@ -1,0 +1,442 @@
+
+
+ .header-fixed {
+	background-color:#292c2f;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+    z-index: 10;
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
+}
+
+.header-fixed .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+
+
+.header-fixed .header-limiter h1 {
+	float: left;
+	font: normal 28px Bebas kai, Bebas Kai, Bebas Kai, sans-serif;
+	line-height: 40px;
+    margin: 0;
+    font-size: 2em;
+}
+
+.header-fixed .header-limiter h1 span {
+    color: #ee7375;
+    font-family: Cookie;
+    font-size: 1.3em;
+}
+
+
+
+.header-fixed .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+	font:1.3em Bebas Kai, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	color: #ee7375;
+	pointer-events: none;
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a:hover {
+    color:#b21259;
+}
+
+body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+ 
+
+
+@media all and (max-width: 600px)  {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 1.2em;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 1.2em;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+    .footer{
+		height:10%;
+		bottom:0;
+		margin-bottom:3%;
+	}
+	
+.container{
+    margin-top:-40%;
+    width:95%;
+}
+	   
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(35, 5vw);
+    grid-gap: 1.5rem; 
+  }
+  
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+    shape-outside: circle(50%);
+    clip-path: circle(40%);
+  }
+  
+  .pleca_insta{
+    background-color:#d3d8de;
+    border-radius: 5%;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 15;
+    grid-row-end: 19;
+    z-index: -1;
+  }
+  
+  .insta_pp {
+      width:60%;
+      height:60%;
+  margin-left:20% ;
+  margin-top:10%;
+  align-content: center;
+  object-fit: cover;
+  display: block; 
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 15;
+  grid-row-end: 17;
+  }
+  .instagram_text{font-size:  2.5em;
+    margin-top: 8%;
+    text-align: center;
+    color:white;
+    padding:10px;
+    font-family:'Bebas Kai';
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 15;
+    grid-row-end: 17;
+    }
+  
+  .insta_photos{
+    margin-left:40%;
+    margin:1%;
+   display: inline-flex;
+   justify-content: space-between;
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  
+  .pleca_fb{
+    background-color:#8fa1ae;
+    border-radius: 5%;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 19;
+    grid-row-end: 23;
+    z-index: -1;
+  }
+  
+  .fb_pp {
+    width:60%;
+    height:60%;
+  margin-left:20% ;
+  margin-top:10%;
+  align-content: center;
+  object-fit: cover;
+  display: block; 
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 19;
+  grid-row-end: 23;
+  }
+  .fb_text{font-size:  2.5em;
+    margin-top: 8%;
+    text-align: center;
+    color:white;
+    padding:10px;
+    font-family:'Bebas Kai';
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 19;
+    grid-row-end: 23;
+    }
+  
+  
+  
+  .pleca_c1{
+    background-color:#202f3f;
+    border-radius: 5%;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 27;
+    grid-row-end: 36;
+    z-index: -1;
+  }
+  
+  .creativa_pp {
+    width:60%;
+    height:60%;
+    margin-left:20% ;
+    margin-top:20%;
+  align-content: center;
+  object-fit: cover;
+  display: block; 
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 27;
+  grid-row-end: 31;
+  }
+  .c1_text{font-size: 2.5em;
+    margin-top: 8%;
+    text-align: center;
+    color:white;
+    padding:10px;
+    font-family:'Bebas Kai';
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 27;
+    grid-row-end: 31;
+    }
+  
+  .c1_photos{
+  margin-top:-9%;
+   margin-left:10%;
+   display: inline-flex;
+   justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 32;
+    grid-row-end: 35;
+  }
+  .c1_photos .iframe{
+    width:40%;
+    height:20%;
+     
+     margin-top:-9%;
+    margin-left:10%;
+    display: inline-flex;
+    justify-content: space-between;
+     grid-column-start: 1;
+     grid-column-end: 11;
+     grid-row-start: 31;
+     grid-row-end: 35;
+   }
+  
+  .pleca_t{
+    background-color:#434b5b ;
+    border-radius: 5%;
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 23;
+    grid-row-end: 27;
+    z-index: -1;
+  }
+  
+  .twitter_pp {
+    width:60%;
+    height:60%;
+    margin-left:20% ;
+    margin-top:10%;
+  align-content: center;
+  object-fit: cover;
+  display: block; 
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 23;
+  grid-row-end: 27;
+  }
+  .t_text{font-size: 2.5em;
+    margin-top: 8%;
+    text-align: center;
+    color:white;
+    padding:10px;
+    font-family:'Bebas Kai';
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 23;
+    grid-row-end: 27;
+    }
+  
+  
+  
+  .lesmiserables3 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 7;
+      z-index: 0;
+    margin-top:-15%;
+    margin-left:15%;
+    width:80%;
+    height:80%;
+      
+      
+     
+     
+    }
+  
+  .pleca {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 6;
+      background-color: #c16462;
+      margin-left: 10%;
+      margin-right: 35%;
+    
+      
+    }
+  
+  
+  
+   
+  
+  .about {
+    font-size:0.7em;
+    margin-left:-10%;
+    margin-right:10%;
+    grid-column-start: 5;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 13;
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  .contacto {
+      grid-column-start: 5;
+      grid-column-end: 10;
+      grid-row-start: 12;
+      grid-row-end: 14;
+      background-color:#434b5b;
+      font-family: 'Lato', sans-serif;
+      color:white;
+      font-size: 2.5em;
+      padding: 5%;
+  
+    
+    }
+  
+    
+  h2{
+      background-color:#c16462;
+      font-family: 'Lato', sans-serif;
+      color:white;
+      font-size: 2.5em;
+      
+      margin-bottom:0%;
+      text-align: center;
+  }
+      
+  p{
+      background-color:#c16462;;
+      font-family: 'Lato', sans-serif;
+      color:white;
+      font-size: 2em;
+      padding:2%;
+      margin-top: 0%;
+     
+  }
+  
+  
+  
+  
+    h6{font-size: 2em;
+     margin-top:110px;
+      margin-left:210px;
+      color:#f4c7c6;
+              
+	  
+}
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 1500px;
+}
