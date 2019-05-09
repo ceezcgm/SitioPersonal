@@ -1,62 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ceez Cárdenas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Ceez Cárdenas</title>
     
-	<meta name="author" content="Cecilia Càrdenas">
-	<meta name="description" content="Portafolio artìstico">
+<meta name="author" content="Cecilia Càrdenas">
+<meta name="description" content="Portafolio artìstico">
 
-	<link rel="stylesheet" href="css/style.css">
-  
-	<link rel="stylesheet" href="assets/header-fixed.css">
-	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
-	<link id="page_favicon" href="images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="assets/header-fixed.css">
+<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<link id="page_favicon" href="images/favicon.ico" rel="icon" type="image/x-icon"/>
 
     
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header class="header-fixed">
-
 	<div class="header-limiter">
-
 		<h1><a href="#">Ceez<span> Cárdenas</span></a></h1>
-
-		<nav>
-			<a href="index.html" class="selected">Home</a>
-			<a href="acting.html">Acting</a>
-			<a href="dance.html">Dance </a>
-			<a href="about.html" >About</a>
-		</nav>
+			<nav>
+				<a href="index.html" class="selected">Home</a>
+				<a href="acting.html">Acting</a>
+				<a href="dance.html">Dance </a>
+				<a href="about.html" >About</a>
+			</nav>
 
 	</div>
-
 </header>
-
 
 <div class="header-fixed-placeholder"></div>
 
-
-
-
 <section id="seccion2">	
 	<img src="images/embeded2.png" class="banner">
-	
-	<h4>Dreamroles:</h4>	
+		<h4>Dreamroles:</h4>	
 </section>
-
-
-
 
 <main>
 
+<!-- DREAMROLES -->
 	<div id="carousel">
-
-		 <div class="hideLeft">
+		<div class="hideLeft">
 			<img src="images/lesmiserables.jpg">
 		</div>
 
@@ -86,16 +74,15 @@
 
 	</div>
 
-	<div class="buttons">
-		<button id="prev">◄</button>
-		<button id="next">►</button>
-	</div>
-
+		<div class="buttons">
+			<button id="prev">◄</button>
+			<button id="next">►</button>
+		</div>
 	
 </main>
 
 
-
+<!-- ABOUTME -->
 <div class="grid-container">
   <div class="gallery">
 		<figure class="pleca"></figure>
@@ -113,63 +100,37 @@
 		<figure class="shoes" ><img src="images/shoes.png" width="110%"  onclick="window.open('dance.html');"></figure>
 		<figure class="mask"> <img src="images/mask.png" width="100%" onclick="window.open('acting.html');"></figure>
 		<figure class="mic">  <img src="images/mic.png"width="80%" onclick="window.open('about.html');"></figure>
-	
 	</div>
 </div>
 
-
-
-
-
-
+<!-- FOOTER -->
 <div class="footer">
-	
-		<h6><a href="javascript:location='mailto:\u0063\u0065\u0065\u007a\u0063\u0067\u006d\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"> <script type="text/javascript">document.write('\u0063\u0065\u0065\u007a\u0063\u0067\u006d\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')</script> </a></h6>
-		
+		<h6>
+			<a href="javascript:location='mailto:\u0063\u0065\u0065\u007a\u0063\u0067\u006d\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"> <script type="text/javascript">document.write('\u0063\u0065\u0065\u007a\u0063\u0067\u006d\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')</script> </a>
+		</h6>
+</div>
 
-  </div>
+<!-- SCRIPTS -->
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
-
-
-
-
-
-	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-
-	<script src="js/jsindex.js"></script>
+<script src="js/jsindex.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
 
 	$(document).ready(function(){
-
 		var showHeaderAt = 150;
-
 		var win = $(window),
-				body = $('body');
-
-	
-
+		body = $('body');
 		if(win.width() > 400){
-
-			
-
-			win.on('scroll', function(e){
-
-				if(win.scrollTop() > showHeaderAt) {
-					body.addClass('fixed');
-				}
-				else {
-					body.removeClass('fixed');
-				}
-			});
-
-		}
-
-	});
+		win.on('scroll', function(e){
+		if(win.scrollTop() > showHeaderAt) {
+		body.addClass('fixed');}
+			else {body.removeClass('fixed');}});
+		}});
 
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Google Analitics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137046071-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

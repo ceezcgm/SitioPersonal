@@ -26,14 +26,12 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif
   }
-
-  
    
 h3{font-size: 8em;
 text-align: center;
 color:#ee7375;
 padding:10px;
-font-family:Bebas Kai;
+font-family:'Bebas Kai';
 }
 
 section#seccion2{
@@ -45,9 +43,6 @@ background-size: cover;
 z-index: -10;
 
 }
-
-
-
 *,
 *::after,
 *::before {
@@ -57,6 +52,7 @@ z-index: -10;
 }
 
 html {
+  font-family: 'Bebas Kai';
   box-sizing: border-box;
   font-size: 62.5%;
   background-image: url("../images/marble.jpg"); 
@@ -101,17 +97,14 @@ body {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 1;
-  grid-row-end: 4;}
+  grid-row-end: 4;
 
- 
-
+}
 .lesmiserables1 {
   grid-column-start: 5;
   grid-column-end: 10;
   grid-row-start: 1;
   grid-row-end: 8;
-
-
 }
 
 .lionking2 {
@@ -146,13 +139,7 @@ body {
     grid-row-start: 8;
     grid-row-end: 13;
   
-  }
-
-  
-  
-
-
-    
+}
 
 #overlay {
 background-color:rgba(0,0,0,.65);
@@ -164,10 +151,9 @@ transition:background-color 300ms ease;
 width:100%;
 }
 
-.fade { background-color:rgba(0,0,0,.85) !important; }
-
-
-
+.fade {
+   background-color:rgba(0,0,0,.85) !important; 
+}
 
 #hero-vid {
 backface-visibility:hidden;
@@ -200,11 +186,6 @@ line-height:1;
 padding:2rem 2.5rem 1.65rem;
 position:absolute;
 }
-
-
-
-
-
 #content {
 background-color:#151515;
 padding:2.5rem;
@@ -217,11 +198,6 @@ font-size:1.25rem;
 letter-spacing:.02rem;
 margin-bottom:1.3rem;
 }
-
-
-
-
-
 
 h4{
   font-family:'Bebas Kai';
@@ -237,11 +213,12 @@ h4{
  }
 
  .dropdown {
+   z-index: 0;
   position: relative;
   display: inline-block;
   align-content: center;
   justify-content: center;
-  left:35%;
+  left:45%;
 
 }
 

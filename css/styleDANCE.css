@@ -11,7 +11,6 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif
   }
-
   
   section#seccion2{
    
@@ -33,9 +32,6 @@ h3{font-size: 13em;
     padding-top: 10px;
     font-family:Bebas Kai;
 }
-
-
-
 *,
 *::after,
 *::before {
@@ -57,17 +53,10 @@ body {
   line-height: 1.6; 
 }
 
-/* First make sure the video thumbnail images are responsive. */
-
 img {
   max-width: 100%;
   height: auto;
 }
-
-/* 
-This is the starting grid for each video with thumbnails 4 across for the largest screen size.
-It's important to use percentages or there may be gaps on the right side of the page. 
-*/
 
 #video {
   
@@ -78,24 +67,19 @@ It's important to use percentages or there may be gaps on the right side of the 
   margin: 1%;
   float: left;
 }
-
-
-
 .video figure {
   height: 0;
   padding-bottom: 100%;
-  overflow: hidden;}
+  overflow: hidden;
+}
 
-  .video figure a {
+.video figure a {
     display: block;
     margin: 0;
     padding: 0;
     border: none;
     line-height: 0;
-  }
 }
-
-
 
 @media (max-width: 1024px) {
   #video {
@@ -119,11 +103,6 @@ It's important to use percentages or there may be gaps on the right side of the 
   left:10%;
 }
 }
-
-
-
-
-
 .video img {
   width: 100%;
   opacity: 1;

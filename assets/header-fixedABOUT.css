@@ -104,7 +104,7 @@ body.fixed .header-fixed .header-limiter nav {
  
 
 
-@media all and (max-width: 600px)  {
+@media all and (max-width: 800px)  {
 
 	.header-fixed {
 		padding: 20px 0;
@@ -138,7 +138,7 @@ body.fixed .header-fixed .header-limiter nav {
 	}
 	
 .container{
-    margin-top:-40%;
+    margin-top:10%;
     width:95%;
 }
 	   
